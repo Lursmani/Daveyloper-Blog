@@ -1,0 +1,12 @@
+.layoutContainer {
+    display: Grid;
+    }
+.layoutBody {
+    display: Grid;
+    grid-row: 2/3;
+    min-height: 90vh;
+    background-image: url('../../../assets/images/mainbg.svg');
+    background-attachment: fixed;
+    background-size: cover;
+  
+}
