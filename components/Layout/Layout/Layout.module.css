@@ -1,5 +1,6 @@
 .layoutContainer {
     display: Grid;
+    grid-template-rows: 10vh ;
     }
 .layoutBody {
     display: Grid;
