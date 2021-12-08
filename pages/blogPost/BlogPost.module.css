@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    width: 70vw;
+    background-color: var(--main-3);
+    justify-self: center;
+    margin: 2rem 0;
+}
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1/2;
+}
+.title {
+    color: var(--secondary-light);
+}
+.imageContainer {
+    display: grid;
+    padding: 1rem;
+    grid-row: 2/3;
+    justify-items: center;
+    width: 100%;
+}
+.imageDiv {
+    width: 100%;
+}
+.contentContainer {
+    grid-row: 3/4;
+
+}
+.content {
+    color: var(--secondary-light);
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 98vw;
+    }
+    .imageContainer {
+        width: 100%;
+        padding: 0;
+    }
+}
