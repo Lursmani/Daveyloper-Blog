@@ -44,10 +44,9 @@ const Header: NextPage<Props> = (props) => {
         </h1>
       </div>
       <ul className={styles["nav-list"]}>
-        {Linkie("https://www.daveyloper.com", "Home", true)}
-        {Linkie("https://daveyloper.com/projects", "Projects", true)}
-        {Linkie("https://daveyloper.com/contact", "Contact", true)}
-        {Linkie("/", "Blog", false)}
+        {Linkie("https://www.daveyloper.com", "Main Website", true)}
+        {Linkie("/", "Blog Home", false)}
+        {Linkie("/newBlog", "New Blog", false)}
       </ul>
       <div onClick={toggleNavbar} className={styles.mobileNavbarButton}>
         <div className={navbarOpen? styles.burgerOneOpen : styles.burgerOne} ></div>

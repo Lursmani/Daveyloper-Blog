@@ -1,5 +1,108 @@
 .container {
-    display: grid;
-    width: 80vw;
-    
+  display: grid;
+  justify-self: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+}
+.form {
+  height: 90vh;
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.formContainer {
+  display: grid;
+  grid-gap: 10px;
+  margin: 10px;
+  width: 70vw;
+  height: 80%;
+  grid-template-rows: 10% 90% 10%;
+}
+.titleInput {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  background-color: var(--secondary-light);
+  padding: 0.5rem 1rem;
+  font-size: 1.3em;
+}
+
+.contentInput {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-light);
+  padding: 1rem;
+  font-size: 1.3em;
+}
+.submitButton {
+  border: none;
+  border-radius: 10px;
+  width: 20%;
+  height: 100%;
+  background-color: var(--secondary-light);
+  justify-self: center;
+  box-sizing: border-box;
+  font-size: 1.5em;
+}
+
+/* ///////////////////////////// SIDEBAR /////////////////////////// */
+
+.sidebar {
+  grid-column: 1/2;
+  display: grid;
+  grid-gap: 10px;
+  width: 20vw;
+  height: 90%;
+  background-color: var(--main-3);
+  border-radius: 10px;
+  margin-top: 10px;
+  grid-row: 1/3;
+}
+
+/* //////////////////////////// PREVIEW ///////////////////////// */
+
+.preview {
+  grid-column: 1/2;
+  display: grid;
+  grid-gap: 10px;
+  width: 80vw;
+  min-height: 30vh;
+  background-color: var(--main-3);
+  border-radius: 10px;
+  margin: 10px 0;
+  grid-row: 3/4;
+  grid-column: 1/3;
+  justify-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .formContainer {
+    width: 95vw;
+  }
+  .submitButton {
+    width: 40%;
+  }
+  .sidebar {
+    grid-column: 1/3;
+    width: 95vw;
+    justify-self: center;
+    overflow: scroll;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    height: 30vh;
+  }
+  .form {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    height: 60vh;
+  }
+  
+  .preview {
+    grid-column: 1/3;
+    width: 95vw;
+    justify-self: center;
+    grid-row: 3/4;
+  }
 }
